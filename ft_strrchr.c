@@ -1,25 +1,27 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: keteo <keteo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/06 16:16:32 by keteo             #+#    #+#             */
-/*   Updated: 2024/11/06 16:16:35 by keteo            ###   ########.fr       */
+/*   Created: 2024/11/10 16:47:47 by keteo             #+#    #+#             */
+/*   Updated: 2024/11/10 17:15:09 by keteo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
+	const char *l;
+	
+	l = NULL;
 	while (*s != '\0')
 	{
 		if (*s == (char)c)
 		{
-			return ((char *)s);
+			l = s;
 		}
 		s++;
 	}
@@ -27,6 +29,5 @@ char    *ft_strchr(const char *s, int c)
 	{
 		return ((char *)s);
 	}
-	return (NULL);
+	return ((char *)l);
 }
-
