@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,17 +6,17 @@
 /*   By: keteo <keteo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:53:20 by keteo             #+#    #+#             */
-/*   Updated: 2024/11/05 18:53:21 by keteo            ###   ########.fr       */
+/*   Updated: 2024/11/11 15:27:26 by keteo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int i;
-	int sign;
-	int j;
+	int	i;
+	int	sign;
+	int	j;
 
 	i = 0;
 	sign = 1;
@@ -30,7 +29,7 @@ int ft_atoi(const char *str)
 	{
 		if (str[i] == '-')
 		{
-		sign = -1;
+			sign = -1;
 		}
 		i++;
 	}

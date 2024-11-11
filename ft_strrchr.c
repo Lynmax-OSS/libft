@@ -6,7 +6,7 @@
 /*   By: keteo <keteo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 16:47:47 by keteo             #+#    #+#             */
-/*   Updated: 2024/11/10 17:15:09 by keteo            ###   ########.fr       */
+/*   Updated: 2024/11/11 15:37:13 by keteo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char *l;
-	
+	const char	*l;
+
 	l = NULL;
 	while (*s != '\0')
 	{
@@ -25,7 +25,7 @@ char	*ft_strrchr(const char *s, int c)
 		}
 		s++;
 	}
-	if(c == '\0')
+	if (c == '\0')
 	{
 		return ((char *)s);
 	}

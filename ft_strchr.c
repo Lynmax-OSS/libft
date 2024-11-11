@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,13 +6,13 @@
 /*   By: keteo <keteo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 16:16:32 by keteo             #+#    #+#             */
-/*   Updated: 2024/11/06 16:16:35 by keteo            ###   ########.fr       */
+/*   Updated: 2024/11/11 15:59:41 by keteo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s != '\0')
 	{
@@ -23,10 +22,9 @@ char    *ft_strchr(const char *s, int c)
 		}
 		s++;
 	}
-	if(c == '\0')
+	if (c == '\0')
 	{
 		return ((char *)s);
 	}
 	return (NULL);
 }
-

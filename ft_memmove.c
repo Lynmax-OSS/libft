@@ -1,28 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: keteo <keteo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/05 14:58:54 by keteo             #+#    #+#             */
-/*   Updated: 2024/11/11 15:46:08 by keteo            ###   ########.fr       */
+/*   Created: 2024/11/11 14:28:44 by keteo             #+#    #+#             */
+/*   Updated: 2024/11/11 15:57:45 by keteo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(const char *s)
+void	*ft_memmove(void *dest_str, const void *src_str, size_t numBytes)
 {
-	int	i;
-	int	count;
+	unsigned char		*d;
+	const unsigned char	*s;
 
-	i = 0;
-	count = 0;
-	while (s[i])
+	d = (unsigned char *)dest_str;
+	s = (const unsigned char *)src_str;
+	if (!dest_str && !src_str && numBytes > 0)
 	{
-		i++;
-		count++;
+		return (NULL);
 	}
-	return (count);
+	if (d > s && d < s + numBytes)
+	{
+		while (numBytes--)
+		{
+			d[numBytes] = s[numBytes];
+		}
+	}
+	else
+	{
+		while (numBytes--)
+		{
+			*d++ = *s++;
+		}
+	}
+	return (dest_str);
 }
