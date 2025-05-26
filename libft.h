@@ -6,7 +6,7 @@
 /*   By: keteo <keteo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:58:58 by keteo             #+#    #+#             */
-/*   Updated: 2025/05/04 18:55:36 by keteo            ###   ########.fr       */
+/*   Updated: 2025/05/26 13:32:29 by keteo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,12 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 char	*get_next_line(int fd);
 int		ft_strcmp(const char *s1, const char *s2);
+void	ft_putchr_count(char c, int *count);
+void	ft_putstr_count(char *args, int *count);
+void	ft_putnbr_count(int nb, int *count);
+void	ft_putunnbr_count(unsigned int nb, int *count);
+void	ft_putptr_count(size_t ptr, int *count);
+void	ft_puthex_count(unsigned int hex, int *count, char x_or_x);
+int		ft_printf(const char *format, ...);
 
 #endif
