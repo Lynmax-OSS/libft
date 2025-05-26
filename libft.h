@@ -6,7 +6,7 @@
 /*   By: keteo <keteo@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 14:58:58 by keteo             #+#    #+#             */
-/*   Updated: 2025/05/26 13:32:29 by keteo            ###   ########.fr       */
+/*   Updated: 2025/05/26 13:36:37 by keteo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
